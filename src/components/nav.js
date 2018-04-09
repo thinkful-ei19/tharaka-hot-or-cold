@@ -1,15 +1,54 @@
 import React from 'react';
 
 
+// export default function Nav() {
+//     return (
+//         <nav className="nav">
+//              <a href="#what" className="what" aria-label="How to play">
+//               What?
+//             </a>
+//             <a
+//               href="#feedback"
+//               className="new"
+//               aria-label="Start a new game"
+//             >
+//               + New Game
+//             </a>
+//         </nav>
+//     );
+// }
+
 export default function Nav() {
     return (
-        <nav className="nav">
-            <a className="instruction" href='#'>
-                {'WHAT'}
-            </a>
-            <a className="newgame" href='#'>
-                {'NEWGAME'}
-            </a>
+      <header>
+        <nav>
+          <ul className="clearfix">
+            <li>
+              <a href="#what" className="what" aria-label="How to play">
+                What?
+              </a>
+            </li>
+            <li>
+              <a
+                href="#feedback"
+                className="new"
+                aria-label="Start a new game"
+              >
+                + New Game
+              </a>
+            </li>
+            <li>
+              <a
+                href="#get-status"
+                /* the `visuallyhidden` class hides an element 
+              while leaving it available to screen reader users  */
+                className="visuallyhidden focusable status-link"
+              >
+                Hear state of game
+              </a>
+            </li>
+          </ul>
         </nav>
+      </header>
     );
-}
+  }
